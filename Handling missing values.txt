@@ -1,0 +1,13 @@
+For handlimg missing values(null,naN):  dataset.isna().sum()
+#1. Replace the missing values with the central tendency, mean,median and mode.
+#2. Entire Row delete. 
+#3. Respective to the problem, have to replace the missing values.
+#4. Consider this as a semi-supervised model, create a model , so that we can predict the missing values.
+
+
+
+#1. dataset["salary"].fillna(dataset["salary"].mean(),inplace=True) (For handling many columns, we use imputer).
+
+#2. dataset.dropna(inplace=True)
+
+#3. dataset["salary"].fillna(0,inplace=True)
